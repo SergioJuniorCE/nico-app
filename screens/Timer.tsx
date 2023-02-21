@@ -2,9 +2,14 @@ import { View, Text } from 'react-native'
 import React from 'react'
 
 const Timer = () => {
+
+  const supabaseKey = process.env.SUPABASE_URL ?? "Key not found";
+
+  console.log(supabaseKey);
+
   return (
     <View>
-      <Text>Timer</Text>
+      <Text>Supabase Key: {supabaseKey}</Text>
     </View>
   )
 }
